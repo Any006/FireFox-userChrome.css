@@ -1,0 +1,36 @@
+#nav-bar{background:transparent!important}
+#navigator-toolbox::after {
+     border-bottom: 0px !important;
+ }
+ #nav-bar {
+   box-shadow: none !important;
+   border-top: none !important;
+ }
+#TabsToolbar {
+ position: absolute;
+ display: block;
+ bottom: 0;
+ width: 100vw;
+ background-clip: padding-box;
+ color: var(--toolbar-color);
+ }
+#tabbrowser-tabs {
+ width: 100vw;
+ }
+#navigator-toolbox {
+ position: relative;
+ padding-bottom: calc( var(--tab-min-height) + 28px );
+}
+#main-window[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen="true"]) #titlebar {
+ height: 36px;
+ }
+.titlebar-buttonbox-container { 
+position: fixed;
+ right: 0;
+ visibility: visible;
+ display: block;
+ }
+ #TabsToolbar .titlebar-buttonbox-container,
+ #TabsToolbar #window-controls {
+display: none;
+ }
